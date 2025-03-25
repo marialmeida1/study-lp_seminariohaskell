@@ -1,0 +1,1 @@
+Pasta destinada aos slides, material de apoio ABNT e aos demais recursos necessários para a parte prática da apresentação do seminário.
