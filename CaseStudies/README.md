@@ -1,1 +1,1 @@
-# Pasta detinada aos exemplos e tutoriais de instalação e uso da linguagem.
+# Pasta detinada aos exemplos, tutoriais de instalação de uso  e explicações técnicas sobre as características e paradigmas da linguagem.
