@@ -1,0 +1,1 @@
+Pasta para os paradigmas e características chave da linguagem
