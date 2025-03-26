@@ -1,5 +1,5 @@
 # Seminário em Linguagens de Programação PUC minas 2025/1 - Haskell
-Este Repositório destinado ao trabalho de Seminários sobre a linguagem haskell, da matéria de Linguagens de Programação da PUC minas - Coração Eucarístico, proposto e orientado pelo professor Marco Rodrigo Costa.
+Este Repositório é destinado aos arquivos e materiais do trabalho de Seminários sobre a linguagem haskell, da matéria de Linguagens de Programação da PUC minas - Coração Eucarístico, proposto e orientado pelo professor Marco Rodrigo Costa.
 Integrantes do grupo:
 
  - Arthur Carvalho Rodrigues   <br>                    [<img src = "https://img.shields.io/badge/github-black.svg?&style=for-the-badge&logo=github&logoColor=white">](https://github.com/ArthurCRodrigues)
