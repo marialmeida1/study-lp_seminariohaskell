@@ -17,16 +17,23 @@ Este Repositório é destinado aos arquivos e materiais do trabalho de Seminári
 
 ### Estrutura do Seminário e Repositório
 
+Este repositório contém três pastas principais:
+
+- `presentation`: Coletânea completa das informações do trabalho.
+- `study_case`: Estudo de caso detalhado, com o objetivo de entender melhor o uso da linguagem requerida.
+- `support_material`: Todo o material de apoio utilizado na elaboração do projeto.
+
 O seminário abordará os seguintes pontos:
 
-- [Introdução](./introduction/)
-- [Histórico da Linguagem](./language_history/)
-- [Paradigmas](./paradigms/)
-- [Características Marcantes](./outstanding_features/)
-- [Linguagens Correlatas](./related_languages/)
-- [Estudo de Caso](./study_case/)
-- [Considerações Finais](./final_considerations/)
-- [Bibliografia](./bibliography/)
-- [Apêndice](./appendix/)
+- Introdução
+- Histórico da Linguagem
+- Paradigmas
+- Características Marcantes
+- Linguagens Correlatas
+- Exemplo Prático
+- Tutorial de Uso
+- Considerações Finais
+- Bibliografia
+- Apêndice
 
 
