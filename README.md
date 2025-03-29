@@ -15,14 +15,18 @@ Este Repositório é destinado aos arquivos e materiais do trabalho de Seminári
  - Mariana Almeida Mendonça    <br>                    [<img src = "https://img.shields.io/badge/github-black.svg?&style=for-the-badge&logo=github&logoColor=white">](https://github.com/marialmeida1)
 
 
-### Estrutura do Seminário
+### Estrutura do Seminário e Repositório
 
-- Introdução
-- Histórico da Linguagem
-- Paradigmas
-- Características Marcantes
-- Linguagens Correlatas 
-- Exemplo prático
-- Considerações Finais
-- Bibliografia
-- Apêndice
+O seminário abordará os seguintes pontos:
+
+- [Introdução](./introduction/)
+- [Histórico da Linguagem](./language_history/)
+- [Paradigmas](./paradigms/)
+- [Características Marcantes](./outstanding_features/)
+- [Linguagens Correlatas](./related_languages/)
+- [Estudo de Caso](./study_case/)
+- [Considerações Finais](./final_considerations/)
+- [Bibliografia](./bibliography/)
+- [Apêndice](./appendix/)
+
+
