@@ -21,7 +21,7 @@ Este Repositório é destinado aos arquivos e materiais do trabalho de Seminári
 - Histórico da Linguagem
 - Paradigmas
 - Características Marcantes
-- Linguagens Correlatas
+- Linguagens Correlatas 
 - Exemplo prático
 - Considerações Finais
 - Bibliografia
