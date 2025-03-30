@@ -1,5 +1,29 @@
 # Principais características programáticas:
 
+- ## Programação puramente funcional:
+  * ### Idéia principal: 
+    O principal ponto da programação puramente funcional, é que ele trata a computação como a avaliação de funções matemáticas. 
+  * ### Recursos chave neste tipo de programação:
+   1. #### Imutabilidade:
+      Dados não podem ser alterados após serem criados.
+      ##### Como a linguagem enforça a imutabilidade:
+       - Variáveis:Em haskell, as variáveis são na verdade constantes. Quando se associa um valor à uma variável, ele pode ser mudado. 
+       ```haskell
+       x = 5
+       x = 6 -- This would cause an error
+       ```  
+       - Estruturas de dados: Listas, tuplas e outras estruturas de dados em Haskell são imutáveis. Se você quiser "modificar" uma lista, você pode criar uma nova lista ao invés.
+       ```haskell
+       let list = [1, 2, 3]
+       let newList = 0 : list
+       -- Cria uma nova lista [0,1,2,3]
+       ```
+
+       
+   2. #### Funções puras:
+      Funções sempre produzem o mesmo "output" para o mesmo "input" sem produzir efeitos colaterais <code>Não modifica variáveis globais e nem printa para a tela</code>.
+   
+
 - ## Avaliação “preguiçosa”: 
   Em Haskell, os valores só são computados quando são necessários, além de ser um recurso chave e que garante a identidade da linguagem, têm implicações severas para como os programas são escritos e executados.
 
@@ -33,7 +57,7 @@
     A maioria das linguagens de programação <code>Python, Java</code> utiliza avaliação estria, onde as expressões são computadas e avaliadas assim que encontradas, diferentemente do Haskell.
     A avaliação preguiçosa é particularmente útil quando:
       - Você está trabalhando com um conjunto extenso ou infinito de dados.
-      - VocÊ quer separar a geração de dados de seu consumo.
+      - Você quer separar a geração de dados de seu consumo.
       - Você quer melhorar a performance ao evitar computações desnecessárias.
 
        
