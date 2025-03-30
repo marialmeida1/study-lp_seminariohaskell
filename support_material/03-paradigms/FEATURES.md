@@ -119,10 +119,10 @@
           >      5. Ela retorna um valor de tipo <code>a</code>.
           >      6. Portanto, <code>add</code> recebe dois números de mesmo tipo e retorna um número de mesmo tipo.
 
-          -  ### O que é type-class em Haskell:
-             Em Haskell, um *type-class* ou classe de tipos, é uma maneira de se definir um grupo de funções ou operações que podem ser aplicados a diferentes tipos. É similar a uma interface em outras linguagens de programação. Um type-class especifica um comportamento, e tipos que implementam este comportamento são ditos como instâncias deste type-class.
+  3. #### O que é uma type-class em Haskell:
+     Em Haskell, um *type-class* ou classe de tipos, é uma maneira de se definir um grupo de funções ou operações que podem ser aplicados a diferentes tipos. É similar a uma interface em outras linguagens de programação. Um type-class especifica um comportamento, e tipos que implementam este comportamento são ditos como instâncias deste type-class.
 
-         - #### Conceitos chave de type-classes:
+     - #### Conceitos chave de type-classes:
          1. ##### Definindo uma type-class:
             * Uma type-class define um conjunto de funções que devem ser implementadas por qualquer tipo que quiser ser uma instância desta 'classe' (não confunda de forma alguma com as classes convencionais encontradas na programação orientada a objetos).
             * Exemplo:
