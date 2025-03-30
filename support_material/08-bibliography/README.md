@@ -5,7 +5,11 @@
    * HUTTON, Graham. Programming in haskell. Cambridge University Press, 2016.]
    * [The History of Haskell - Simon Peyton Jones, Paul Hudak, John Hughes](https://dl.acm.org/doi/10.1145/1238844.1238856)  
    * [Haskell.org](https://www.haskell.org/)  
-   * [GHC - The Glasgow Haskell Compiler](https://www.haskell.org/ghc/)
+   * [GHC - The Glasgow Haskell Compiler](https://www.haskell.org/ghc/)    
+   * [PureScript Documentation](https://www.purescript.org/)<br>
+   * [Idris Official Documentation](https://www.idris-lang.org/)<br>
+   * [OCaml Official Website](https://ocaml.org/)
+
 
    
  - Lista de arquivos-referência:
