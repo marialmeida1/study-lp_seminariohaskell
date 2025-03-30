@@ -2,4 +2,5 @@
  - Introduzir sobre o projeto e sobre a linguagem Haskell.
 
  # Organização de Arquivos:
-    - [INTRODUTION](./INTRODUCTION.md) contém a introdução sobre o trabalho e sobre a linguagem Haskell
+   - [INTRODUCTION:](./INTRODUCTION.md) contém a introdução sobre o trabalho e sobre a linguagem Haskell
+   - [`introducion.tex`:] apresenta o codigo latex do mesmo arquivo.
