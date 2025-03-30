@@ -195,6 +195,59 @@
          * Type-classes permitem polimorfismo, permitindo que funções trabalhem com qualquer tipo que satisfaça um comportamento específico.
 
 
+<br>
+
+- ## Programação Declarativa:
+  - ### Idéia principal:
+    Focar em "o quê" o programa deveria fazer, mais do que em "como" deveria fazer.
+  - ### Recursos Chave / O Que É Programação Declarativa:
+    - #### Sem fluxo de controle explícito:
+      1. Programação declarativa evita o uso de instruções específicas de passo a passo ou de estruturas de controle como loops (<code>for</code>,<code>while</code>) ou condicionais (<code>if-else</code>).
+      2. Ao invés disso, você descreve relacionamentos entre entradas (inputs) e saídas (outputs) ou as regras para suas computações. 
+    - #### Expressões e declarações:
+      1. Programas são escritos como uma série de expressões ou declarações que definem o que deve ser operado.
+      2. Por exemplo, ao invés de se iterar através de uma lista para se operar uma soma, você pode simplesmente declarar a soma utilizando uma função como <code>sum</code> como argumento ao chamar uma função <code>map</code>.
+    - #### Abstraindo detalhes de execução:
+      1. O programador não precisa se preocupar com "como" as operações são performadas (ex. ao se preocupar em utilizar iteração, recursão ou sobre otimizações de performance). A própria linguagem ou mesmo a execução cuidam destes detalhes.
+     
+  - ### Programação Declarativa No Próprio Haskell:
+    Haskell, é uma linguagem de programação declarativa, pois permite que você descreva a lógica das suas operações e programas computacionais sem especificar o fluxo de controle, Veja como isso funciona na prática:
+
+     1. ### Como Haskell foca no 'O que deve ser feito' e não no 'Como':
+       Em haskell, você define qual deve ser o resultado ao se utilizar de funções e expressões.
+       - #### Exemplo:
+         ```haskell
+         let squares = map (^2) [1...5]
+         ```
+          - Isto declara que <code>squares</code> é o resultado do quadrado de cada número na lista <code>[1...5]</code>.
+          - Você não especifica como iterar através desta lista, ou como aplicar a operação de expoente.
+
+     2. ### Sem Loops:
+       Haskell não tem as estruturas tradicionais de loops como <code>for</code> e <code>while</code>. Ao invés disso, utiliza-se recursão ou funções de ordem-maior como <code>map</code>, <code>filter</code>, e <code>fold</code> para expressar operções de forma declarativa.
+       - #### Exemplo:
+         ```haskell
+         let evenNumbers = filter even [1..10]
+         ```
+    
+     3. ### Funções puras:
+       Como demonstrado antes, Haskell, assim como todas as linguagens de programação puramente funcionais, trata tudo como funções. Além disso, a programação declarativa na linguagem está diretamente ligada à sua natureza funcional. Como funções são puras, isso significa que não há efeitos colaterias, e que sempre produzem as mesmas saídas dadas as mesmas entradas. Isso tudo também torna mais fácil entender o que um programa faz.
+
+
+     4. ### Capacidade de composição:
+        A forma que Haskell é construída, encoraja a 'quebra' de problemas em funções menores e reutilizáveis que podem ser compostas juntas para resolver problemas maiores.
+        - #### Exemplo:
+          ```haskell
+          let result = sum (filter even(map (^2) [1..10]))
+          ```
+          - Esta linha de código combina múltiplas funções de ordem-maior (<code>map</code>, <code>filter</code>, <code>sum</code>) para operar a soma dos quadrados de números pares de 1 a 10.
+          - <code>map</code> - como já explicado anteriormente em: [map](https://github.com/marialmeida1/study-lp_seminariohaskell/edit/master/support_material/03-paradigms/FEATURES.md#exemplo-de-imutabilidade-em-a%C3%A7%C3%A3o), itera uma função (outra que não map´) passada como argumento, sobre cada elemento de uma lista.
+          - <code>filter</code> - filtra de acordo com o argumento passado, no caso do código acima, os números pares (even).
+          - <code>sum</code> - função de soma padrão de ordem-maior como qualquer outra linguagem.
+          - <code>^x</code> - função de expoente padrão (onde x seria o número passado como argumento) de ordem-maior como qualquer outra linguagem.
+
+
+
+
 
 
 
