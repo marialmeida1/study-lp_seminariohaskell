@@ -3,4 +3,4 @@
 
  # Organização de Arquivos:
    - [INTRODUCTION:](./INTRODUCTION.md) contém a introdução sobre o trabalho e sobre a linguagem Haskell
-   - [`introducion.tex`:] apresenta o codigo latex do mesmo arquivo.
+   - [`introducion.tex`:](./introduction.tex) apresenta o codigo latex do mesmo arquivo.
