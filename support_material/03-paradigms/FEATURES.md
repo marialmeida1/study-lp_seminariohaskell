@@ -120,18 +120,79 @@
           >      6. Portanto, <code>add</code> recebe dois números de mesmo tipo e retorna um número de mesmo tipo.
 
           -  ### O que é type-class em Haskell:
-             Em Haskell, um *type-class* ou classe de tipos, é uma maneira de se definir um grupo de funções ou operações que podem ser aplicados a diferentes tipos. É similar a uma interface em outras linguagens de programação. Um type-class especifica um comportamente, e tipos que implementam este comportamento são ditos como instâncias deste type-class. (Podemos dizer ser algo similar aos name-spaces que encontramos em cloud-computing, onde grupos separam comportamentos e usos de determinados nomes?).
-             - #### Conceitos chave de type-classes:
-                1. ##### Definindo uma type-class:
-                   * Uma type-class define um conjunto de funções que devem ser implementadas por qualquer tipo que quiser ser uma instância desta 'classe' (não confunda de forma alguma com as classes convencionais encontradas na programação orientada a objetos).
-                   *  Exemplo:
-                      ```haskell
-                            class Eq a where
-                            (==) :: a -> a -> Bool
-                            (/=) :: a -> a -> Bool
-                      ```
-                      * <code>Eq</code> é um type-class para tipos que suportam comparações de igualdade <code>(==)</code>.
-                      * Qualquer tipo que for uma instância de <code>eq</code> deve implementar <code>(==)</code> e <code>(/=)</code>.
+             Em Haskell, um *type-class* ou classe de tipos, é uma maneira de se definir um grupo de funções ou operações que podem ser aplicados a diferentes tipos. É similar a uma interface em outras linguagens de programação. Um type-class especifica um comportamento, e tipos que implementam este comportamento são ditos como instâncias deste type-class.
+
+         - #### Conceitos chave de type-classes:
+         1. ##### Definindo uma type-class:
+            * Uma type-class define um conjunto de funções que devem ser implementadas por qualquer tipo que quiser ser uma instância desta 'classe' (não confunda de forma alguma com as classes convencionais encontradas na programação orientada a objetos).
+            * Exemplo:
+              ```haskell
+              class Eq a where
+                  (==) :: a -> a -> Bool
+                  (/=) :: a -> a -> Bool
+              ```
+              * `Eq` é um type-class para tipos que suportam comparações de igualdade (`==` e `/=`).
+              * Qualquer tipo que for uma instância de `Eq` deve implementar `(==)` e `(/=)`.
+
+         2. ##### Tornando um tipo uma instância de uma type-class:
+            * Para tornar um tipo uma instância de uma type-class, você deve fornecer implementações para as funções requeridas.
+            * Exemplo:
+              ```haskell
+              data Color = Red | Green | Blue
+
+              instance Eq Color where
+                  Red == Red = True
+                  Green == Green = True
+                  Blue == Blue = True
+                  _ == _ = False
+              ```
+              * Aqui, o tipo `Color` é definido com três valores possíveis: `Red`, `Green` e `Blue`.
+              * Ele é tornado uma instância de `Eq`, permitindo comparações de igualdade entre valores do tipo `Color`.
+
+         3. ##### Usando type-classes:
+            * Uma vez que um tipo é uma instância de uma type-class, você pode usar as funções definidas por essa type-class com aquele tipo.
+            * Exemplo:
+              ```haskell
+              Red == Green  -- Resultado: False
+              Blue /= Red   -- Resultado: True
+              ```
+
+         4. ##### Type-classes comuns em Haskell:
+            * **`Eq`**: Para tipos que podem ser comparados por igualdade (`==`, `/=`).
+            * **`Ord`**: Para tipos que possuem ordenação (`<`, `>`, `<=`, `>=`).
+            * **`Show`**: Para tipos que podem ser convertidos para uma string (`show`).
+            * **`Read`**: Para tipos que podem ser analisados a partir de uma string (`read`).
+            * **`Num`**: Para tipos numéricos (`+`, `-`, `*`, etc.).
+            * **`Functor`**: Para tipos que podem ser mapeados (por exemplo, listas).
+
+         5. ##### Restrições de type-class:
+            * Você pode restringir uma função para trabalhar apenas com tipos que são instâncias de uma type-class específica.
+            * Exemplo:
+              ```haskell
+              add :: Num a => a -> a -> a
+              add x y = x + y
+              ```
+              * A restrição `Num a =>` significa que `add` funciona apenas com tipos que são instâncias da type-class `Num`.
+
+         6. ##### Exemplo: Criando uma type-class personalizada:
+            * Você pode definir e usar uma type-class personalizada:
+              ```haskell
+              class Describable a where
+                  describe :: a -> String
+
+              data Animal = Dog | Cat
+
+              instance Describable Animal where
+                  describe Dog = "Este é um cachorro."
+                  describe Cat = "Este é um gato."
+              ```
+              * Aqui, `Describable` é uma type-class que define uma função `describe`.
+              * O tipo `Animal` é tornado uma instância de `Describable`, permitindo que você use a função `describe` com valores do tipo `Animal`.
+
+        - #### Resumo:
+         * Uma type-class define um conjunto de comportamentos (funções) que tipos podem implementar.
+         * Tipos se tornam instâncias de uma type-class ao implementar suas funções.
+         * Type-classes permitem polimorfismo, permitindo que funções trabalhem com qualquer tipo que satisfaça um comportamento específico.
 
 
 
