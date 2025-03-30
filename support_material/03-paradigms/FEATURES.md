@@ -245,6 +245,91 @@
           - <code>sum</code> - função de soma padrão de ordem-maior como qualquer outra linguagem.
           - <code>^x</code> - função de expoente padrão (onde x seria o número passado como argumento) de ordem-maior como qualquer outra linguagem.
 
+- ## Computação Paralela:
+  - ### Idéia principal:
+    Haskell é uma linguagem funcional que facilita a computação paralela devido à sua imutabilidade, funções puras e suporte a bibliotecas robustas para paralelismo e concorrência.
+
+  - ### Recursos chave:
+    1. **Imutabilidade**:
+       - Como os dados em Haskell são imutáveis, não há problemas de estado compartilhado ou condições de corrida, tornando a computação paralela mais segura.
+    2. **Funções puras**:
+       - Funções puras garantem que não há efeitos colaterais, permitindo que cálculos sejam executados em paralelo sem interferência.
+    3. **Bibliotecas de paralelismo**:
+       - Haskell oferece bibliotecas como `Control.Parallel`, `Control.Concurrent`, `async` e `STM` para facilitar a computação paralela e concorrente.
+
+  - ### Exemplos:
+    #### Usando `par` e `pseq` para paralelismo:
+    ```haskell
+    import Control.Parallel
+
+    fib :: Int -> Int
+    fib 0 = 0
+    fib 1 = 1
+    fib n = fib (n - 1) + fib (n - 2)
+
+    main :: IO ()
+    main = do
+        let x = fib 35 `par` fib 36 `pseq` (fib 35 + fib 36)
+        print x
+    ```
+    - `par` inicia uma computação paralela para `fib 35`.
+    - `pseq` garante que `fib 36` seja avaliado antes de combinar os resultados.
+
+    #### Usando `Strategies` para paralelismo:
+    ```haskell
+    import Control.Parallel.Strategies
+
+    main :: IO ()
+    main = do
+        let numbers = [1..1000000]
+        let squares = map (^2) numbers `using` parList rseq
+        print (sum squares)
+    ```
+    - `parList rseq` avalia os elementos da lista em paralelo.
+
+    #### Concorrência com `forkIO`:
+    ```haskell
+    import Control.Concurrent
+
+    main :: IO ()
+    main = do
+        forkIO $ putStrLn "Hello from thread 1"
+        forkIO $ putStrLn "Hello from thread 2"
+        threadDelay 1000000 -- Aguarda as threads terminarem
+    ```
+
+    #### Programação assíncrona com `async`:
+    ```haskell
+    import Control.Concurrent.Async
+
+    main :: IO ()
+    main = do
+        result <- concurrently (return (fib 35)) (return (fib 36))
+        print result
+    ```
+
+    #### Memória Transacional de Software (STM):
+    ```haskell
+    import Control.Concurrent.STM
+
+    main :: IO ()
+    main = do
+        counter <- atomically $ newTVar 0
+        atomically $ modifyTVar counter (+1)
+        value <- atomically $ readTVar counter
+        print value
+    ```
+
+  - ### Benefícios:
+    - **Segurança**: A imutabilidade e as funções puras eliminam problemas de estado compartilhado.
+    - **Escalabilidade**: Haskell aproveita múltiplos núcleos de CPU para melhorar o desempenho.
+    - **Facilidade de uso**: As bibliotecas fornecem abstrações de alto nível para paralelismo e concorrência.
+
+  - ### Aplicações:
+    - Computação científica
+    - Processamento de grandes volumes de dados
+    - Sistemas distribuídos
+    - Servidores web concorrentes
 
 
 
@@ -257,4 +342,5 @@
 
 
 
-       
+
+
