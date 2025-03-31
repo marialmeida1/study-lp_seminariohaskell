@@ -4,3 +4,4 @@ Nessa pasta você irá encontrar todos os apêndices referentes ao projeto. Abai
 
 - [DANIEL](./DANIEL.md)
 - [GUSTAVO](./GUSTAVO.md)
+- [BRUNA](./BRUNA.md)
