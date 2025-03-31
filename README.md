@@ -28,11 +28,10 @@ O seminário abordará os seguintes pontos:
 - [Introdução](./support_material/01-introduction/)
 - [Histórico da Linguagem](./support_material/02-language_history/)
 - [Paradigmas](./support_material/03-paradigms/)
-- [Características Marcantes](./support_material/05-related_languages/)
-- [Linguagens Correlatas](./support_material/05-related_languages/)
-- [Estudo de Caso](./support_material/06-study_case/)
-- [Considerações Finais](./support_material/07-final_considerations/)
-- [Bibliografia](./support_material/08-bibliography/)
-- [Apêndice](./support_material/09-appendix/)
+- [Linguagens Correlatas](./support_material/04-related_languages/)
+- [Estudo de Caso](./support_material/05-study_case/)
+- [Considerações Finais](./support_material/06-final_considerations/)
+- [Bibliografia](./support_material/07-bibliography/)
+- [Apêndice](./support_material/08-appendix/)
 
 
