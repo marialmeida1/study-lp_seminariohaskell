@@ -19,6 +19,7 @@ O principal objetivo era combinar os **melhores aspectos das linguagens funciona
 - **1991-1996** → Atualizações frequentes até o **Haskell 1.4**, refinando a **sintaxe, sistema de módulos e inferência de tipos**.
 - **1997** → Publicação do **Haskell 98**, uma versão estável para **ensino e desenvolvimento**.
 - **2001** → Formação do Haskell Prime Committee para gerenciar futuras revisões da linguagem.
+- **2001-2005** → GHC se consolida como compilador principal, com extensões modernas.
 - **2009** → Criação do **Haskell 2010**, uma versão revisada com melhorias e remoção de recursos obsoletos.
 - **2014** → Haskell ganha destaque na indústria, sendo adotado em áreas como **finanças, segurança e sistemas distribuídos**.
 - **2020** → Discussões sobre o Haskell 2020, mas sem lançamento formal.
