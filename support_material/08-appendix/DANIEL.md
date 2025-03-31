@@ -2,6 +2,7 @@
 
 ## Daniel Victor Rocha Costa
 
+
 [<img src = "https://img.shields.io/badge/github-black.svg?&style=for-the-badge&logo=github&logoColor=white">](https://github.com/vitorrdan)
 
 Pesquisar sobre Haskell foi uma experiência desafiadora e enriquecedora. Como eu não tinha conhecimento prévio em paradigmas declarativos e funcionais, inicialmente tive dificuldade para entender a sintaxe e a estrutura dos códigos. No entanto, conforme fui me aprofundando, percebi o quão poderosa a linguagem pode ser.
