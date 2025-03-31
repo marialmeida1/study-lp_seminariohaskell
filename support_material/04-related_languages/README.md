@@ -4,3 +4,4 @@
  - Mostrar linguagens similares e opostas, entre outras.
 
  # Organização de Arquivos:
+  - [RELATED_LANGUAGES](./RELATED_LANGUAGES.md) contém informações sobre as linguagens relacionadas à Haskell
